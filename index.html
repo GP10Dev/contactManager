@@ -14,7 +14,7 @@
 <body>
     <div id="scrn">
         <header>
-            <h2>Your Contacts</h2>
+            <h2 onclick="getContacts()">Your Contacts</h2>
             <div id="topNav">
                 <i class="fa fa-cog"></i>
             </div>
@@ -26,14 +26,14 @@
                 <input type="text" placeholder="search">
                 <i class="fas fa-search"></i>
             </form>
-            <div id="contactList">
-                <p>Your Contacts will be here</p>
+            <div id="navList">
                 <ul>
                     <li>
                         <i class="fas fa-user-tie"></i>
                     </li>
                     <li>
                         <i class="fas fa-user-tie female"></i>
+                        <span></span>
                     </li>
                     <li>
                         <i class="fas fa-user-circle"></i>
@@ -54,7 +54,9 @@
                     <li><i class="fas fa-pencil-alt"></i>Edit Contact</li>
                 </ul>
             </div>
+            <div id="contactList">Contact List</div>
         </section>
     </div>
+    <script src="./static/js/index.js"></script>
 </body>
 </html>
